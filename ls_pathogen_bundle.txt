@@ -1,0 +1,14 @@
+ale
+auto-pairs
+coc.nvim
+fzf.vim
+typescript-vim
+vim-colors-solarized
+vim-commentary
+vim-gitgutter
+vim-github-dark
+vim-go
+vim-js
+vim-jsx-pretty
+vim-polyglot
+vim-tmux-navigator
