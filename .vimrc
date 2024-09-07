@@ -5,7 +5,10 @@
 set nocompatible
 
 " Activate pathogen
-call pathogen#infect('bundle/{}', '/opt/homebrew/opt/fzf')
+" If fzf installed using Homebrew on Apple Silicon:
+" call pathogen#infect('bundle/{}', '/opt/homebrew/opt/fzf')
+" Otherwise:
+call pathogen#infect('bundle/{}', '/usr/local/opt/fzf')
 
 " -- Display
 set title                 " Update the title of your window or your terminal
@@ -275,8 +278,11 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-" fzf (installed via Homebrew)
-set rtp+=/opt/homebrew/opt/fzf
+" fzf
+" If installed using Homebrew on Apple Silicon:
+" set rtp+=/opt/homebrew/opt/fzf
+" If installed using Homebrew:
+set rtp+=/usr/local/opt/fzf
 
 " Autocomplete : commands and show the last command
 set wildmenu
